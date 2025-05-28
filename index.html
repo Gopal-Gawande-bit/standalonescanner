@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable QR Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+    <div class="scanner-container" id="scanner-container">
+        <div class="scanner-header" id="scanner-header">
+            QR/Barcode Scanner
+            <button id="close-scanner">×</button>
+        </div>
+        <div id="qr-reader" style="width: 300px"></div>
+    </div>
+
+    <div class="content">
+        <h1>Search-In</h1>
+        <button id="open-scanner">Open Scanner</button>
+        <div id="scan-result"></div>
+    </div>
+     <!-- In your index.html -->
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
